@@ -39,6 +39,8 @@ public class Program {
 				System.err.println("Thread Interrupted" + exception);
 			}
 		}
+		
+		executor.shutdown();
 
 	}
 

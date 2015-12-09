@@ -16,7 +16,7 @@ public class MyRunnable implements Runnable {
 		Task1();
 	}
 
-	private void Task1() {
+	private synchronized void Task1() {
 		for (int index = 0; index < 10; index++) {
 			System.out.println("Runnable " + this._name + " count: " + index);
 			try {
